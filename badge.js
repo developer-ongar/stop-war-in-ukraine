@@ -12,3 +12,12 @@ SWU__DOMReady(function() {
   
   // Set custom title
   el.title = title || 'We stand with Ukraine';
+  
+  // Set custom URL
+  if (url) {
+    el.style.cursor = 'pointer'
+    el.target = '_blank'
+    el.addEventListener('click', function() {
+      window.open(url, '_blank')
+    })
+  }
