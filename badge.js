@@ -9,3 +9,6 @@ SWU__DOMReady(function() {
   const url = SWU__currentScript.getAttribute('url');
   const title = SWU__currentScript.getAttribute('title');
   const position = SWU__currentScript.getAttribute('position');
+  
+  // Set custom title
+  el.title = title || 'We stand with Ukraine';
